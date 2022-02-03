@@ -1,0 +1,275 @@
+<resources>
+
+    <!-- _________________________ temas ____________________________ -->
+
+    <!-- tema base -->
+    <style name="tela_base" parent="Base.Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/preto</item>
+        <item name="android:textColor">@color/preto</item>
+        <item name="android:alertDialogTheme">@style/dialogo_confirmacao</item>
+        <item name="android:actionBarStyle">@style/titulo_tela</item>
+        <item name="actionBarStyle">@style/titulo_tela</item>
+</style>
+
+
+<style name="titulo_tela" parent="@style/Widget.AppCompat.ActionBar">
+    <item name="android:titleTextStyle">@style/cor_titulo_tela</item>
+    <item name="titleTextStyle">@style/cor_titulo_tela</item>
+    <item name="background">@color/colorPrimaryDark</item>
+    <item name="android:background">@color/colorPrimaryDark</item>
+</style>
+
+
+<style name="cor_titulo_tela" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+
+
+<!-- tema para tela com menu -->
+    <style name="tela_com_menu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:actionMenuTextColor">@color/preto</item>
+        <item name="android:textColor">@color/preto</item>
+        <item name="android:alertDialogTheme">@style/dialogo_confirmacao</item>
+        <item name="android:actionBarStyle">@style/titulo_tela</item>
+        <item name="actionBarStyle">@style/titulo_tela</item>
+    </style>
+
+
+    <style name="dialogo_confirmacao" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@android:color/white</item>
+    <item name="android:bottomDark">@android:color/white</item>
+    <item name="android:centerBright">@android:color/white</item>
+    <item name="android:centerMedium">@android:color/black</item>
+    <item name="android:fullBright">@android:color/black</item>
+    <item name="android:fullDark">@android:color/black</item>
+    <item name="android:topBright">@android:color/black</item>
+    </style>
+
+
+    <!-- tema sem barra no topo -->
+    <style name="tela_sem_barra_superior" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+    <!-- janela de dialogo com barra no topo -->
+    <style name="dialogo" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="dialogo_progresso" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    <!-- janela de dialogo sem barra no topo -->
+    <style name="dialogo_sem_barrra" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- _________________________ rotulos ____________________________ -->
+
+
+    <!-- rotulo padrao -->
+    <style name="txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margem_componente</item>
+        <item name="android:layout_marginLeft">@dimen/margem_componente</item>
+        <item name="android:layout_marginRight">@dimen/margem_componente</item>
+        <item name="android:layout_marginBottom">@dimen/margem_componente</item>
+        <item name="android:textSize">@dimen/fonte_normal</item>
+    </style>
+
+    <!-- rotulo claro -->
+    <style name="txt.claro">
+        <item name="android:textColor">@color/fonte_branca</item>
+    </style>
+
+    <!-- rotulo escuro -->
+    <style name="txt.escuro">
+        <item name="android:textColor">@color/fonte_preta</item>
+    </style>
+
+    <!-- rotulo escuro -->
+    <style name="txt.cinza">
+        <item name="android:textColor">@color/fonte_cinza</item>
+    </style>
+
+
+    <!-- rotulo erro -->
+    <style name="txt.erro">
+        <item name="android:textColor">@color/fonte_erro</item>
+    </style>
+
+    <!-- rotulo titulo escuro-->
+    <style name="txt.escuro.titulo">
+        <item name="android:textSize">@dimen/fonte_maior</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- rotulo titulo claro -->
+    <style name="txt.claro.titulo">
+        <item name="android:textSize">@dimen/fonte_maior</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- rotulo titulo claro -->
+    <style name="txt.cinza.titulo">
+        <item name="android:textSize">@dimen/fonte_maior</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- _________________________ botoes ____________________________ -->
+
+
+    <!-- botao base -->
+    <style name="bt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- botao padrao -->
+    <style name="bt.padrao">
+        <item name="android:background">@drawable/v1_bg_bt_laranja_bordas</item>
+        <item name="android:textColor">@color/fonte_branca</item>
+    </style>
+
+
+    <!-- _________________________ campos ____________________________ -->
+
+
+
+    <!-- campo padrao -->
+    <style name="campo">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/altura_campo</item>
+        <item name="android:layout_marginTop">@dimen/margem_componente</item>
+        <item name="android:layout_marginLeft">@dimen/margem_componente</item>
+        <item name="android:layout_marginRight">@dimen/margem_componente</item>
+        <item name="android:layout_marginBottom">@dimen/margem_componente</item>
+        <item name="android:paddingLeft">@dimen/padding_componente</item>
+        <item name="android:paddingRight">@dimen/padding_componente</item>
+        <item name="android:maxLength">245</item>
+        <item name="android:textSize">@dimen/fonte_normal</item>
+        <item name="android:background">@drawable/v1_campo</item>
+    </style>
+
+
+
+    <!-- campo padrao -->
+    <style name="campo.fonte_escura">
+        <item name="android:textColor">@color/fonte_preta</item>
+        <item name="android:textColorHint">@color/fonte_hint</item>
+    </style>
+
+
+    <!-- campo de senha -->
+    <style name="campo.fonte_escura.senha">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">16</item>
+    </style>
+
+
+    <style name="campo_linha">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/altura_campo</item>
+        <item name="android:layout_marginTop">@dimen/margem_componente</item>
+        <item name="android:layout_marginLeft">@dimen/margem_componente</item>
+        <item name="android:layout_marginRight">@dimen/margem_componente</item>
+        <item name="android:layout_marginBottom">@dimen/margem_componente</item>
+        <item name="android:paddingLeft">@dimen/padding_componente</item>
+        <item name="android:paddingRight">@dimen/padding_componente</item>
+        <item name="android:maxLength">245</item>
+        <item name="android:textSize">@dimen/fonte_normal</item>
+        <item name="android:textColor">@color/fonte_branca</item>
+        <item name="android:textColorHint">@color/fonte_branca</item>
+        <item name="colorAccent">@color/branco</item>
+    </style>
+
+
+    <!-- _________________________ combo ____________________________ -->
+
+
+
+    <style name="combo">
+        <item name="android:textColor">@color/preto</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/altura_combo</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@drawable/v1_combo</item>
+    </style>
+
+    <style name="combo.branco">
+        <item name="android:textColor">@color/fonte_branca</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/altura_combo</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@drawable/v1_combo</item>
+        <item name="colorAccent">@color/branco</item>
+    </style>
+
+    <!-- _________________________ radio ____________________________ -->
+
+    <style name="radio">
+        <item name="android:textColor">@color/fonte_preta</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fonte_normal</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    <!--  <item name="android:button">@drawable/radio</item> -->
+     <item name="android:paddingLeft">6dp</item>
+ </style>
+
+
+
+ <!-- _________________________ radio ____________________________ -->
+
+    <style name="check">
+        <item name="android:textColor">@color/fonte_preta</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fonte_normal</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:paddingLeft">6dp</item>
+     </style>
+
+ </resources>

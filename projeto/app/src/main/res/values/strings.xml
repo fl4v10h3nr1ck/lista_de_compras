@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ListaDeCompras</string>
+	<string name="versao_cod">1</string>
+    <string name="versao_valor">1.0</string>
+    <string name="versao_nome">Rubi</string>
+    <string name="erro_de_conexao">Você está sem internet. Falha em conectar.</string>
+    <string name="app_email">contato@mscsolucoes.com.br</string>
+    <string name="app_site">www.mscsolucoes.com.br</string>
+    <string name="app_link"></string>
+
+
+    <!-- _________ tela abertura __________ -->
+
+    <string name="abt_lb1" formatted="false">Copyright &#169; %s. cupomlivre.com.</string>
+    <string name="abt_lb2" formatted="false">Aguarde, carregando seus dados... %d/%d</string>
+
+    <string name="dia_exclusao">Tem certeza que deseja EXCLUIR este item?</string>
+
+</resources>
